@@ -24,20 +24,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #05263c, #000d1a);
+  background: radial-gradient(circle, #191625, #191625);
 }
 
 .clock::before {
   content: '';
-  width: 525px;
-  height: 525px;
   position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
   border-radius: 50%;
-  background: linear-gradient(to right, #00d9ff, #ee00ff);
-  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
-  z-index: -1;
+  box-shadow: 0 0 30px 20px #463650;
 }
-
 .number {
   transform: rotate(calc(30deg * var(--n)));
   position: absolute;
@@ -49,11 +48,13 @@
 
 .center-dot {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #ee00ff;
+  width: 18px;
+  height: 18px;
+  /* background-color: #fff; */
+  background: radial-gradient(#ffffff, #908a90);
+
   border-radius: 50%;
-  border: 6px solid #00d9ff;
+  /* border: 6px solid #908a90; */
 }
 
 .hour-hand,
@@ -69,19 +70,23 @@
 }
 
 .hour-hand {
-  width: 12px;
-  height: 130px;
-  background: linear-gradient(#00d9ff, #ee00ff);
+  width: 8px;
+  height: 110px;
+  /* background: linear-gradient(#00d9ff, #ee00ff); */
+  background: radial-gradient(#ffffff, #908a90);
 }
 .minute-hand {
-  width: 12px;
+  width: 8px;
   height: 190px;
-  background: linear-gradient(to top, #00d9ff, #ee00ff);
+  /* background: linear-gradient(to top, #00d9ff, #ee00ff); */
+  background: radial-gradient(#ffffff, #908a90);
 }
 .second-hand {
-  width: 6px;
+  width: 8px;
   height: 210px;
-  background: linear-gradient(to top, #00d9ff, #ee00ff);
+  background: #a272a5;
+  background-color: rgba(162, 114, 165, 1.1);
+  /* position: relative; */
 }
 
 #digital {
