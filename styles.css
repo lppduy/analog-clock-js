@@ -7,12 +7,12 @@
 .container {
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   display: flex;
   align-items: center;
   height: 100vh;
-  background: radial-gradient(circle, #0b456b, #021c37);
-  /* background: #191625; */
+  /* background: radial-gradient(circle, #0b456b, #021c37); */
+  background: #191625;
 }
 
 .clock {
@@ -85,6 +85,19 @@
 }
 
 #digital {
-  font-size: 60px;
-  color: white;
+  font-size: 80px;
+  color: #f0ebe3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#date {
+  font-size: 16px;
+  color: #726d66;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#display {
+  font-family: 'Digital-7', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
